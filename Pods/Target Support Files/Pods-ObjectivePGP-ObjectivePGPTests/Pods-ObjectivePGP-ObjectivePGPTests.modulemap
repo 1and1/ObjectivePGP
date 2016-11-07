@@ -1,0 +1,6 @@
+framework module Pods_ObjectivePGP_ObjectivePGPTests {
+  umbrella header "Pods-ObjectivePGP-ObjectivePGPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

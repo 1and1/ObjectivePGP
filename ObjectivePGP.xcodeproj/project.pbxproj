@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38AF05C782074E1E9B286C11 /* libPods-ObjectivePGPOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C42D0AFAD4DC7AD76CF21 /* libPods-ObjectivePGPOSX.a */; };
-		713B6813B2DD45E5B30B5EA1 /* libPods-ObjectivePGP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059B85547F6245229D167817 /* libPods-ObjectivePGP.a */; };
+		15BDCD95F043B39694960F7A /* Pods_ObjectivePGP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB6EAE9E9E7BE7FE6F1531E /* Pods_ObjectivePGP.framework */; };
 		750016A919C22E7100EAF308 /* secring-test-plaintext-encrypted-message.asc in Resources */ = {isa = PBXBuildFile; fileRef = 750016A819C22E7100EAF308 /* secring-test-plaintext-encrypted-message.asc */; };
 		7502CEFF1916DCE9001B32D7 /* PGPSignatureSubpacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7502CEFE1916DCE9001B32D7 /* PGPSignatureSubpacket.m */; };
 		75040AB21926BB35000CEA93 /* ObjectivePGPTestArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = 75040AB11926BB35000CEA93 /* ObjectivePGPTestArmor.m */; };
@@ -170,6 +169,7 @@
 		75F81ADD195B835300704164 /* PGPPublicKeyRSA.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75B2450D1933DB89003F24A0 /* PGPPublicKeyRSA.h */; };
 		75F81ADE195B835300704164 /* PGPCryptoCFB.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 751056111940A76F00653C0B /* PGPCryptoCFB.h */; };
 		75FE9808193FB46200613549 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FE9807193FB46200613549 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */; };
+		D153F6C9ACF0A23270000B19 /* Pods_ObjectivePGP_ObjectivePGPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D50648D67A2A94BFA85F89 /* Pods_ObjectivePGP_ObjectivePGPTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,11 +286,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		059B85547F6245229D167817 /* libPods-ObjectivePGP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectivePGP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		074C42D0AFAD4DC7AD76CF21 /* libPods-ObjectivePGPOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectivePGPOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		176F70F4FE5C0E221452B266 /* Pods-ObjectivePGP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGP/Pods-ObjectivePGP.release.xcconfig"; sourceTree = "<group>"; };
-		4AFC8E128B0F4211888984C0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		68876505925AB2A6F894CC37 /* Pods-ObjectivePGP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGP/Pods-ObjectivePGP.debug.xcconfig"; sourceTree = "<group>"; };
+		099D81A81FF1456B47E3DBFF /* Pods-ObjectivePGP-ObjectivePGPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGP-ObjectivePGPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGP-ObjectivePGPTests/Pods-ObjectivePGP-ObjectivePGPTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C2ABD887A1C77D1EBE13C82 /* Pods-ObjectivePGP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGP.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGP/Pods-ObjectivePGP.release.xcconfig"; sourceTree = "<group>"; };
+		2FC4C90C36A5C77883D8954E /* Pods-ObjectivePGP-ObjectivePGPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGP-ObjectivePGPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGP-ObjectivePGPTests/Pods-ObjectivePGP-ObjectivePGPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C023529D7043731DBDF9AD6 /* Pods-ObjectivePGP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGP/Pods-ObjectivePGP.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB6EAE9E9E7BE7FE6F1531E /* Pods_ObjectivePGP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectivePGP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750016A819C22E7100EAF308 /* secring-test-plaintext-encrypted-message.asc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "secring-test-plaintext-encrypted-message.asc"; sourceTree = "<group>"; };
 		7502CEFD1916DCE9001B32D7 /* PGPSignatureSubpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSignatureSubpacket.h; sourceTree = "<group>"; };
 		7502CEFE1916DCE9001B32D7 /* PGPSignatureSubpacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSignatureSubpacket.m; sourceTree = "<group>"; };
@@ -390,9 +390,7 @@
 		75E7B6BC19167F1700C96BAB /* PGPPacketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPPacketFactory.h; sourceTree = "<group>"; };
 		75FE9806193FB46200613549 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h; sourceTree = "<group>"; };
 		75FE9807193FB46200613549 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m; sourceTree = "<group>"; };
-		8191ED3556BC916D4D9205E2 /* libPods-ObjectivePGPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjectivePGPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E4D315DBBA7D34FD265EC3C /* Pods-ObjectivePGPOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGPOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGPOSX/Pods-ObjectivePGPOSX.release.xcconfig"; sourceTree = "<group>"; };
-		B7165102DEEFEC13F605D91B /* Pods-ObjectivePGPOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectivePGPOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectivePGPOSX/Pods-ObjectivePGPOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		94D50648D67A2A94BFA85F89 /* Pods_ObjectivePGP_ObjectivePGPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectivePGP_ObjectivePGPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756299B91914DE1A00C5AD3B /* Foundation.framework in Frameworks */,
+				15BDCD95F043B39694960F7A /* Pods_ObjectivePGP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +413,7 @@
 				750BD0D9193F5AC3005B9840 /* libz.dylib in Frameworks */,
 				7556464B1958FF6F00BFA34C /* libbz2.dylib in Frameworks */,
 				7580828A1986AFA200348D0D /* libObjectivePGP.a in Frameworks */,
-				713B6813B2DD45E5B30B5EA1 /* libPods-ObjectivePGP.a in Frameworks */,
+				D153F6C9ACF0A23270000B19 /* Pods_ObjectivePGP_ObjectivePGPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +424,6 @@
 				75A5D20F195983430074A124 /* libObjectivePGP.a in Frameworks */,
 				759FF4711959824E005B240C /* libbz2.dylib in Frameworks */,
 				759FF46F19598248005B240C /* libz.dylib in Frameworks */,
-				38AF05C782074E1E9B286C11 /* libPods-ObjectivePGPOSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +438,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B765759E3F083DAA2DBBCF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C023529D7043731DBDF9AD6 /* Pods-ObjectivePGP.debug.xcconfig */,
+				2C2ABD887A1C77D1EBE13C82 /* Pods-ObjectivePGP.release.xcconfig */,
+				2FC4C90C36A5C77883D8954E /* Pods-ObjectivePGP-ObjectivePGPTests.debug.xcconfig */,
+				099D81A81FF1456B47E3DBFF /* Pods-ObjectivePGP-ObjectivePGPTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7507B72519170E6D003A2DC7 /* PGPSignature */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,7 +471,7 @@
 				759FF46719598227005B240C /* opgp */,
 				756299B71914DE1A00C5AD3B /* Frameworks */,
 				756299B61914DE1A00C5AD3B /* Products */,
-				EDE5FD42D446DC6FD9AAA307 /* Pods */,
+				4B765759E3F083DAA2DBBCF7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -487,10 +496,8 @@
 				756299B81914DE1A00C5AD3B /* Foundation.framework */,
 				756299C61914DE1A00C5AD3B /* XCTest.framework */,
 				756299C91914DE1A00C5AD3B /* UIKit.framework */,
-				4AFC8E128B0F4211888984C0 /* libPods.a */,
-				059B85547F6245229D167817 /* libPods-ObjectivePGP.a */,
-				074C42D0AFAD4DC7AD76CF21 /* libPods-ObjectivePGPOSX.a */,
-				8191ED3556BC916D4D9205E2 /* libPods-ObjectivePGPTests.a */,
+				4CB6EAE9E9E7BE7FE6F1531E /* Pods_ObjectivePGP.framework */,
+				94D50648D67A2A94BFA85F89 /* Pods_ObjectivePGP_ObjectivePGPTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -638,17 +645,6 @@
 			name = Packets;
 			sourceTree = "<group>";
 		};
-		EDE5FD42D446DC6FD9AAA307 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				68876505925AB2A6F894CC37 /* Pods-ObjectivePGP.debug.xcconfig */,
-				176F70F4FE5C0E221452B266 /* Pods-ObjectivePGP.release.xcconfig */,
-				B7165102DEEFEC13F605D91B /* Pods-ObjectivePGPOSX.debug.xcconfig */,
-				8E4D315DBBA7D34FD265EC3C /* Pods-ObjectivePGPOSX.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -656,9 +652,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 756299D81914DE1A00C5AD3B /* Build configuration list for PBXNativeTarget "ObjectivePGP" */;
 			buildPhases = (
+				7F80F7A1D106E8702C007194 /* [CP] Check Pods Manifest.lock */,
 				756299B11914DE1A00C5AD3B /* Sources */,
 				756299B21914DE1A00C5AD3B /* Frameworks */,
 				756299B31914DE1A00C5AD3B /* CopyFiles */,
+				EB5F69D61B35BBBD486D5FE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -673,11 +671,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 756299DB1914DE1A00C5AD3B /* Build configuration list for PBXNativeTarget "ObjectivePGPTests" */;
 			buildPhases = (
-				87E9879AEC5E43CFBC81570E /* Check Pods Manifest.lock */,
+				5230D11190F73ED475F359F4 /* [CP] Check Pods Manifest.lock */,
 				756299C11914DE1A00C5AD3B /* Sources */,
 				756299C21914DE1A00C5AD3B /* Frameworks */,
 				756299C31914DE1A00C5AD3B /* Resources */,
-				97BBFE57986D4AC4BAE98D62 /* Copy Pods Resources */,
+				3CBC11BBA4EAF79B85F68EF2 /* [CP] Embed Pods Frameworks */,
+				9EED8631B3C6CA96246EEAC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -693,11 +692,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 759FF46A19598227005B240C /* Build configuration list for PBXNativeTarget "opgp" */;
 			buildPhases = (
-				3682BA07B85E42CF9A5FDDE3 /* Check Pods Manifest.lock */,
 				759FF46219598227005B240C /* Sources */,
 				759FF46319598227005B240C /* Frameworks */,
 				759FF46419598227005B240C /* CopyFiles */,
-				B334A9D9043846FA92E990EF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -733,7 +730,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PGP;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Marcin Krzyżanowski";
 				TargetAttributes = {
 					759FF46519598227005B240C = {
@@ -779,64 +776,79 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3682BA07B85E42CF9A5FDDE3 /* Check Pods Manifest.lock */ = {
+		3CBC11BBA4EAF79B85F68EF2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectivePGP-ObjectivePGPTests/Pods-ObjectivePGP-ObjectivePGPTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		87E9879AEC5E43CFBC81570E /* Check Pods Manifest.lock */ = {
+		5230D11190F73ED475F359F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		97BBFE57986D4AC4BAE98D62 /* Copy Pods Resources */ = {
+		7F80F7A1D106E8702C007194 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EED8631B3C6CA96246EEAC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectivePGP-ObjectivePGPTests/Pods-ObjectivePGP-ObjectivePGPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5F69D61B35BBBD486D5FE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectivePGP/Pods-ObjectivePGP-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B334A9D9043846FA92E990EF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectivePGPOSX/Pods-ObjectivePGPOSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -977,6 +989,7 @@
 		756299D61914DE1A00C5AD3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -986,12 +999,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1004,7 +1023,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1014,6 +1033,7 @@
 		756299D71914DE1A00C5AD3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1023,12 +1043,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1036,7 +1061,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1045,6 +1070,7 @@
 		};
 		756299D91914DE1A00C5AD3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C023529D7043731DBDF9AD6 /* Pods-ObjectivePGP.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
@@ -1064,7 +1090,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					Pods/Headers/Public/OpenSSL,
+					"Pods/Headers/Public/OpenSSL/**",
+					"Pods/Headers/Public/OpenSSL/opensslIncludes/**",
 				);
 				PRODUCT_NAME = ObjectivePGP;
 				SKIP_INSTALL = YES;
@@ -1073,6 +1100,7 @@
 		};
 		756299DA1914DE1A00C5AD3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2ABD887A1C77D1EBE13C82 /* Pods-ObjectivePGP.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
@@ -1092,7 +1120,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					Pods/Headers/Public/OpenSSL,
+					"Pods/Headers/Public/OpenSSL/**",
+					"Pods/Headers/Public/OpenSSL/opensslIncludes/**",
 				);
 				PRODUCT_NAME = ObjectivePGP;
 				SKIP_INSTALL = YES;
@@ -1101,8 +1130,9 @@
 		};
 		756299DC1914DE1A00C5AD3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68876505925AB2A6F894CC37 /* Pods-ObjectivePGP.debug.xcconfig */;
+			baseConfigurationReference = 2FC4C90C36A5C77883D8954E /* Pods-ObjectivePGP-ObjectivePGPTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1114,16 +1144,32 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL\"/**",
+				);
 				INFOPLIST_FILE = "ObjectivePGPTests/ObjectivePGPTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakore.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ObjectivePGPTests;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/OpenSSL\"/** \"${PODS_ROOT}/OpenSSL/opensslIncludes/\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		756299DD1914DE1A00C5AD3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 176F70F4FE5C0E221452B266 /* Pods-ObjectivePGP.release.xcconfig */;
+			baseConfigurationReference = 099D81A81FF1456B47E3DBFF /* Pods-ObjectivePGP-ObjectivePGPTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1131,15 +1177,29 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectivePGP/ObjectivePGP-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL\"/**",
+				);
 				INFOPLIST_FILE = "ObjectivePGPTests/ObjectivePGPTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakore.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ObjectivePGPTests;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/OpenSSL\"/** \"${PODS_ROOT}/OpenSSL/opensslIncludes/\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 		759FF46B19598227005B240C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7165102DEEFEC13F605D91B /* Pods-ObjectivePGPOSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1155,7 +1215,6 @@
 		};
 		759FF46C19598227005B240C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E4D315DBBA7D34FD265EC3C /* Pods-ObjectivePGPOSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

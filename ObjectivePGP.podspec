@@ -9,13 +9,11 @@ Pod::Spec.new do |s|
 
   s.authors       =  {'Marcin Krzyżanowski' => 'marcin.krzyzanowski@hakore.com'}
   
-  s.ios.platform          = :ios, '6.0'
-  s.ios.deployment_target = '6.0'
-  s.ios.header_dir          = 'ObjectivePGP'
+  s.ios.deployment_target = '8.0'
+  s.ios.header_dir        = 'ObjectivePGP'
 
-  s.osx.platform          = :osx, '10.9'
-  s.osx.deployment_target = '10.9'
-  s.osx.header_dir          = 'ObjectivePGP'
+  #s.osx.deployment_target = '10.10'
+  #s.osx.header_dir        = 'ObjectivePGP'
 
   s.source_files = 'ObjectivePGP/*.{h,m}'
   s.public_header_files = 'ObjectivePGP/*.h'

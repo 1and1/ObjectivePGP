@@ -1,11 +1,18 @@
 target :ObjectivePGP do
-	platform :ios, "6.0"
+	platform :ios, "8.0"
+    use_frameworks!
     pod 'OpenSSL'
-	link_with 'ObjectivePGPTests'
+    
+    target 'ObjectivePGPTests' do
+        
+    end
 end
 
-target :ObjectivePGPOSX do
-	platform :osx, "10.7"
-    pod 'OpenSSL'
- 	link_with 'opgp'
-end
+#target :ObjectivePGPOSX do
+#	platform :osx, "10.7"
+#    pod 'OpenSSL'
+#    
+#    target 'opgp' do
+#        inherit! :search_paths
+#    end
+#end
