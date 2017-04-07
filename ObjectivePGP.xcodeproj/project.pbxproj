@@ -391,6 +391,7 @@
 		75FE9806193FB46200613549 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.h; sourceTree = "<group>"; };
 		75FE9807193FB46200613549 /* PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPSymmetricallyEncryptedIntegrityProtectedDataPacket.m; sourceTree = "<group>"; };
 		94D50648D67A2A94BFA85F89 /* Pods_ObjectivePGP_ObjectivePGPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectivePGP_ObjectivePGPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A864FF831E97E10E006E85FE /* ObjectivePGP.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjectivePGP.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +466,7 @@
 		756299AC1914DE1A00C5AD3B = {
 			isa = PBXGroup;
 			children = (
+				A864FF831E97E10E006E85FE /* ObjectivePGP.podspec */,
 				758475E1195AF866003953B2 /* README.md */,
 				756299BA1914DE1A00C5AD3B /* ObjectivePGP */,
 				756299CE1914DE1A00C5AD3B /* ObjectivePGPTests */,
