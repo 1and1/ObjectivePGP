@@ -19,6 +19,8 @@
 #import "PGPFingerprint.h"
 #import "PGPCryptoUtils.h"
 
+#import <openssl/bn.h>
+
 @interface PGPPublicKeyEncryptedSessionKeyPacket ()
 @property (strong) PGPMPI *encryptedMPI_M;
 @end

@@ -17,6 +17,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 
 #import <objc/runtime.h>
+#import <openssl/bn.h>
 
 @interface PGPPacket ()
 @property (copy, readwrite) NSData *headerData;
