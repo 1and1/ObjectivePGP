@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '8.0'
   s.ios.header_dir        = 'ObjectivePGP'
+  s.pod_target_xcconfig = {'ENABLE_BITCODE' => 'NO' }
 
   #s.osx.deployment_target = '10.10'
   #s.osx.header_dir        = 'ObjectivePGP'
