@@ -106,7 +106,9 @@
     [bodyData appendBytes:&_format length:1];
 
     if (self.filename) {
-        UInt8 filenameLength = [self.filename lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+        NSUInteger filenameLength = [self.filename lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
+        NSAssert(filenameLength <= 255, @"");
+        filenameLength = MAX(filenameLength, 255);
         [bodyData appendBytes:&filenameLength length:1];
         [bodyData appendBytes:[self.filename cStringUsingEncoding:NSUTF8StringEncoding] length:filenameLength];
     } else {

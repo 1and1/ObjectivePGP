@@ -72,13 +72,14 @@
     NSMutableData *outData = [NSMutableData data];
 
     // length
-    UInt16 bits = BN_num_bits(self.bignumInternal);
-    UInt16 bitsBE = CFSwapInt16HostToBig(bits);
+    int bits = BN_num_bits(self.bignumInternal);
+    NSAssert(bits <= (UInt16)-1, @"");
+    UInt16 bitsBE = CFSwapInt16HostToBig((UInt16)bits);
     [outData appendBytes:&bitsBE length:2];
     
     // mpi
     UInt8 *buf = calloc(BN_num_bytes(self.bignumInternal), sizeof(UInt8));
-    UInt16 bytes = (bits + 7) / 8;
+    UInt16 bytes = (UInt16)((bits + 7) / 8);
     BN_bn2bin(self.bignumInternal, buf);
     [outData appendBytes:buf length:bytes];
     free(buf);

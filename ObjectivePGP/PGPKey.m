@@ -445,7 +445,7 @@
         for (NSArray *prefArray in preferecesArray) {
             [set intersectSet:[NSSet setWithArray:prefArray]];
         }
-        return [set[0] unsignedIntValue];
+        return [set[0] unsignedCharValue];
     }
     
     return PGPSymmetricTripleDES;

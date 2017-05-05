@@ -290,7 +290,7 @@
         {
             // 5.2.3.23.  Reason for Revocation
             NSNumber *revocationCode = self.value;
-            UInt8 revocationCodeByte = [revocationCode unsignedIntValue];
+            UInt8 revocationCodeByte = [revocationCode unsignedCharValue];
             [data appendBytes:&revocationCodeByte length:1];
         }
             break;

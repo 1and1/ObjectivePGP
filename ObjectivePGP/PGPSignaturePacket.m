@@ -780,7 +780,8 @@
             }
         }
         // Two-octet scalar octet count for following hashed subpacket data.
-        UInt16 countBE = CFSwapInt16HostToBig(subpackets.length);
+        NSAssert(subpackets.length <= (UInt16)-1, @"");
+        UInt16 countBE = CFSwapInt16HostToBig((UInt16)subpackets.length);
         [data appendBytes:&countBE length:2];
         // subackets data
         [data appendData:subpackets];

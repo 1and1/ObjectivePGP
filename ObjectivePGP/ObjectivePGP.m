@@ -375,7 +375,7 @@
     // Random bytes as a string to be used as a key
     NSUInteger keySize = [PGPCryptoUtils keySizeOfSymmetricAlhorithm:preferredSymmeticAlgorithm];
     uint8_t buf[keySize];
-    SecRandomCopyBytes(kSecRandomDefault, keySize, buf);
+    {int nError = SecRandomCopyBytes(kSecRandomDefault, keySize, buf);NSAssert(nError == 0, @"");}
     NSMutableData *sessionKeyData = [NSMutableData dataWithBytes:buf length:keySize];
     
     for (PGPKey *publicKey in publicKeys) {

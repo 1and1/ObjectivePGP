@@ -249,8 +249,9 @@
     NSMutableData *data = [NSMutableData dataWithCapacity:128];
     [data appendBytes:&_version length:1];
 
-    UInt32 timestamp = [self.createDate timeIntervalSince1970];
-    UInt32 timestampBE = CFSwapInt32HostToBig(timestamp);
+    NSTimeInterval timestamp = [self.createDate timeIntervalSince1970];
+    NSAssert(timestamp <= (UInt32)-1, @"");
+    UInt32 timestampBE = CFSwapInt32HostToBig((UInt32)timestamp);
     [data appendBytes:&timestampBE length:4];
 
     if (!forceV4 && _version == 0x03) {
@@ -278,7 +279,7 @@
     NSData *publicKeyData = [self buildPublicKeyBodyData:NO];
 
     NSUInteger length = publicKeyData.length;
-    UInt8 upper = length >> 8;
+    UInt8 upper = (UInt8)(length >> 8);
     UInt8 lower = length & 0xff;
     UInt8 headWithLength[3] = {0x99, upper, lower};
     [data appendBytes:&headWithLength length:3];

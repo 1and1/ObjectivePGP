@@ -39,7 +39,7 @@
 	while (deflate(&strm, Z_FINISH) != Z_STREAM_END)
 	{
 		// deflate should return Z_STREAM_END on the first call
-		[compressed setLength: [compressed length] * 1.5];
+		[compressed setLength: [compressed length] * 3/2];
 		strm.next_out = [compressed mutableBytes] + strm.total_out;
 		strm.avail_out = (uInt)(compressed.length - strm.total_out);
 	}
@@ -78,7 +78,7 @@
         return nil;
 	}
 	
-	NSMutableData *decompressed = [NSMutableData dataWithLength: [self length]*2.5];
+	NSMutableData *decompressed = [NSMutableData dataWithLength: [self length]*5/2];
 	strm.next_out = [decompressed mutableBytes];
 	strm.avail_out = (uInt)[decompressed length];
 	strm.next_in = (void *)[self bytes];
@@ -92,7 +92,7 @@
 	while (inflate(&strm, Z_FINISH) != Z_STREAM_END)
 	{
 		// inflate should return Z_STREAM_END on the first call
-		[decompressed setLength: [decompressed length] * 1.5];
+		[decompressed setLength: [decompressed length] * 3/2];
 		strm.next_out = [decompressed mutableBytes] + strm.total_out;
 		strm.avail_out = (uInt)([decompressed length] - strm.total_out);
 	}
@@ -114,7 +114,7 @@
 - (NSData *)bzip2Decompressed:(NSError * __autoreleasing *)error
 {
     int bzret = 0;
-    bz_stream stream = {0x00};
+    bz_stream stream;memset(&stream, 0, sizeof(stream));
     stream.next_in = (void *)[self bytes];
     stream.avail_in = (uInt)self.length;
     
@@ -148,7 +148,7 @@
 - (NSData *)bzip2Compressed:(NSError * __autoreleasing *)error
 {
     int bzret = 0;
-    bz_stream stream = {0x00};
+    bz_stream stream;memset(&stream, 0, sizeof(stream));
     stream.next_in = (void *)[self bytes];
     stream.avail_in = (uInt)self.length;
     unsigned int compression = 9; // should be a value between 1 and 9 inclusive

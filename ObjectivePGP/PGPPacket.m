@@ -137,7 +137,7 @@ const UInt32 UnknownLength = UINT32_MAX;
     UInt8 headerByte = 0;
     [headerData getBytes:&headerByte length:1];
     // Bits 5-0 -- packet tag
-    UInt8 packetTag = (headerByte << 2);
+    UInt8 packetTag = (UInt8)(headerByte << 2);
     packetTag = (packetTag >> 2);
     *tag = packetTag;
 
@@ -188,11 +188,11 @@ const UInt32 UnknownLength = UINT32_MAX;
     UInt8 headerByte = 0;
     [headerData getBytes:&headerByte length:1];
     //  Bits 5-2 -- packet tag
-    UInt8 packetTag = (headerByte << 2);
+    UInt8 packetTag = (UInt8)(headerByte << 2);
     packetTag = (packetTag >> 4);
     *tag = packetTag;
     //  Bits 1-0 -- length-type
-    UInt8 bodyLengthType = (headerByte << 6);
+    UInt8 bodyLengthType = (UInt8)(headerByte << 6);
     bodyLengthType = bodyLengthType >> 6;
 
     UInt32 headerLength = 1;
@@ -267,14 +267,14 @@ const UInt32 UnknownLength = UINT32_MAX;
 {
     NSMutableData *data = [NSMutableData data];
     // write length octets
-    UInt64 bodyLength = bodyData.length;
+    NSUInteger bodyLength = bodyData.length;
     if (bodyLength < 192) {
         // 1 octet
         [data appendBytes:&bodyLength length:1];
     } else if (bodyLength >= 192 && bodyLength <= 8383) {
         // 2 octet
         UInt8 buf[2] = {0,0};
-        UInt16 twoOctets = bodyLength;
+        UInt16 twoOctets = (UInt16)bodyLength;
         buf[0] = (UInt8)((twoOctets - 192) >> 8) + 192;
         buf[1] = (UInt8)(twoOctets - 192);
         [data appendBytes:buf length:2];
