@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   s.source_files = 'ObjectivePGP/*.{h,m}'
   s.public_header_files = 'ObjectivePGP/*.h'
 
-  s.dependency 'OpenSSL' ## when we wan to use use_frameworks! then -> s.dependency 'GRKOpenSSLFramework'
-
+  s.dependency 'GRKOpenSSLFramework' ## when we dont want to use use_frameworks! then -> s.dependency 'OpenSSL'
+ 
   s.requires_arc = true
 
   s.libraries =  'z', 'bz2'
